@@ -6,13 +6,12 @@ const App = ({ name = "Anonymous" }) => {
   return (
     <div style={{ border: "3px red dashed", margin: "1em", padding: "1em" }}>
       <h1>Hello {name}!!</h1>
-      <h3>This is a server component.</h3>
+      <h3>This is a server component</h3>
       <Counter />
-      <Suspense fallback="Pending...">
+      <Suspense fallback={<h2>Pending...</h2>}>
         {/* @ts-ignore: FIXME how can we type async component?*/}
         <HNews />
       </Suspense>
-
     </div>
   );
 };

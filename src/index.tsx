@@ -7,6 +7,6 @@ const root = createRoot(document.getElementById("root")!);
 const App = serve<{ name: string }>("App");
 root.render(
   <StrictMode>
-    <App name="Wakuwork" />
+    <App name="RSC DEMO2" />
   </StrictMode>
 );
